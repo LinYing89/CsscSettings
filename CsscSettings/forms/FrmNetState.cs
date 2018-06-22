@@ -43,20 +43,20 @@ namespace CsscSettings.forms
         private void initList(object o)
         {
 
-            ChannelState cs1 = new ChannelState();
-            Channel c = new Channel();
-            c.Name = "mobile";
-            c.Strength = 3;
-            cs1.ChannelMain = c;
-            Channel c1 = new Channel();
-            c1.Name = "unicom";
-            c1.Strength = 2;
-            cs1.ChannelReserve1 = c1;
-            Channel c2 = new Channel();
-            c2.Name = "";
-            c2.Strength = 3;
-            cs1.ChannelReserve2 = c2;
-            listChannel.Add(cs1);
+            //ChannelState cs1 = new ChannelState();
+            //Channel c = new Channel();
+            //c.Name = "mobile";
+            //c.Strength = 3;
+            //cs1.ChannelMain = c;
+            //Channel c1 = new Channel();
+            //c1.Name = "unicom";
+            //c1.Strength = 2;
+            //cs1.ChannelReserve1 = c1;
+            //Channel c2 = new Channel();
+            //c2.Name = "";
+            //c2.Strength = 3;
+            //cs1.ChannelReserve2 = c2;
+            //listChannel.Add(cs1);
 
             dataGridView1.Rows.Clear();
             for (int i = 0; i < listChannel.Count; i++)
