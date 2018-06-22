@@ -5,9 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Net.Sockets;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace CsscSettings.net
 {
@@ -202,10 +200,7 @@ namespace CsscSettings.net
                 }
                 else if (str.Contains("error"))
                 {
-                    if (null != EventReceivedError)
-                    {
-                        EventReceivedError(null, null);
-                    }
+                    EventReceivedError?.Invoke(null, null);
                 }
                 else if (str.StartsWith("status"))
                 {
